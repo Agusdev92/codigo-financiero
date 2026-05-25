@@ -101,19 +101,7 @@
     <footer>
         <p>Desarrollado por Agustín con asistencia de IA. 2025.</p>
     </footer>
-<button class="theme-toggle" onclick="toggleTheme()">
-  <span class="icon">🌙</span> tema
-</button>
-    <script>
-  function toggleTheme() {
-    const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    const next = current === 'light' ? 'dark' : 'light';
-    html.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-    document.querySelector('.theme-toggle .icon').textContent =
-      next === 'light' ? '🌙' : '☀️';
-  }
+
 
   // Recordar preferencia al recargar
   const saved = localStorage.getItem('theme');
